@@ -1,4 +1,3 @@
-
 Idea of this project is to write eclipse-plugins which aid faster development of java projects.
 
 List of plugins:
@@ -45,6 +44,14 @@ Usage:
    after the paste button
 
 -> Executing a paste after first step should give u desired result
+
+
+Installation:
+
+-> Download the project from repository
+-> go to UtilityCommands/plugins directory
+-> Copy the jar and place it in eclipse_home/plugins directory of ur local eclipse insallation
+-> Restart eclispe
 
 
 
