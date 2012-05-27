@@ -1,0 +1,57 @@
+
+Idea of this project is to write eclipse-plugins which aid faster development of java projects.
+
+List of plugins:
+
+Copy As SQL:
+  -> Very oftern java code has reference to several sql's to fetch data from database. Most of the time time 
+these sql's are complex and span multi-line. 
+
+For example: a multiline sql stored in java would look like this
+
+private static string test_sql = "select col, col2, col3" +
+                                  "col4, col5, col6 " +
+                                  " from table test_table";
+
+If i have to test this sql in sqldeveloper or any tool, i cannot copy this sql directly since it has special characters + 
+" which sql tools won't understand. A normal copy and paste of the sql would look like this.
+
+
+private static string test_sql = "select col, col2, col3" +
+                                  "col4, col5, col6 " +
+                                  " from table test_table";
+
+
+This plugin helps solve this problem, where if u select the following sql and copy it using copy as sql, it converts it into a format where it can be easily
+pasted in any sql tool and directly execute the sql.
+
+So selecting above sql and clicking on plugin would conver this into
+
+-- test_sql
+select col1,col2,col3
+col4, col5, col6
+from table test_table
+;
+
+
+Copy As Multiline string:
+
+It does similar things as copy as sql, but won't format the string by adding a semicolon and title line for the selection.
+
+
+Usage:
+
+-> Select the sql using mouse or touch pad, right click on the selection and click on "Copy As Sql". This option is right 
+   after the paste button
+
+-> Executing a paste after first step should give u desired result
+
+
+
+
+
+
+
+
+
+
